@@ -1,0 +1,15 @@
+{
+  "name": "toolbox",
+  "version": "0.1.0",
+  "description": "Toolbox for TLoBT",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^11.2.0"
+  }
+}
