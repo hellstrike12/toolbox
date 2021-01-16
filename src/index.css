@@ -1,0 +1,110 @@
+:root {
+  --bg-alt: #121212;
+  --fg: #8207c5;
+  --text: #ffffff;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  margin: 0px;
+  background-color: var(--bg-alt);
+}
+
+#cols {
+  width: 250px;
+  max-width: 500px;
+  height: 100vh;
+  background-color: inherit;
+  color: var(--text);
+  box-shadow: 1px 0px 5px black;
+}
+
+#cols-header {
+  color: var(--text);
+  background-color: var(--bg-alt);
+  font-weight: bold;
+  font-size: small;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+#cols-content {
+  padding-top: 0.25rem;
+}
+
+.col, .reg {
+  width: inherit;
+  height: 25px;
+  font-size: 12pt;
+  background-color: var(--bg-alt);
+  overflow: hidden;
+}
+
+.col > .icon {
+  color: var(--fg);
+  font-size: inherit;
+  position: relative;
+  top: 4px;
+  left: 10px;
+  
+}
+
+.col > .label {
+  color: var(--text);
+  font-size: inherit;
+  position: relative;
+  top: 3px;
+  left: 20px;
+}
+
+.col > .counter {
+  font-size: inherit;
+  font-weight: bold;
+  color: var(--bg-alt);
+  background-color: var(--fg);
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  top: 3px;
+  margin-right: 10px;
+  width: 40px;
+  float: right;
+}
+
+.col.selected {
+  background-color: var(--fg);
+}
+
+.col.selected > .icon {
+  color: var(--bg-alt);
+}
+
+.col.selected > .counter {
+  color: var(--fg);
+  background-color: var(--bg-alt);
+}
+
+.col:hover, .reg:hover {
+  background-color: #181818;
+}
+
+.col.selected:hover {
+  background-color: var(--fg);
+}
+
+.regs {
+  background-color: var(--bg-alt);
+  height: 0;
+  overflow: hidden;
+}
+
+.regs.regs-active {
+  height: fit-content;
+}
+
+.reg > span {
+  position: relative;
+  top: 3px;
+  left: 60px;
+  width: calc(100% - 60px);
+}
