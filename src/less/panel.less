@@ -1,0 +1,104 @@
+@import "colors";
+
+#cols {
+  width: 250px;
+  max-width: 500px;
+  height: 100vh;
+  background-color: inherit;
+  color: @text;
+  box-shadow: 1px 0px 5px black;
+  
+  &-header {
+    color: @text;
+    background-color: @background;
+    font-weight: bold;
+    font-size: small;
+    text-align: center;
+    padding: 0.5rem;
+  }
+
+  &-content {
+    padding-top: 0.25rem;
+  }
+}
+
+.col {
+  width: inherit;
+  height: 25px;
+  font-size: 12pt;
+  background-color: @background;
+  overflow: hidden;
+
+  .icon {
+    color: @primary;
+    font-size: inherit;
+    position: relative;
+    top: 4px;
+    left: 10px;
+  }
+
+  .label {
+    color: @text;
+    font-size: inherit;
+    position: relative;
+    top: 3px;
+    left: 20px;
+  }
+
+  .counter {
+    font-weight: bold;
+    color: @background;
+    background-color: @primary;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    top: 3px;
+    margin-right: 10px;
+    width: 40px;
+    float: right;
+  }
+
+  &:hover {
+    background-color: @hover;
+  }
+}
+
+.col.selected {
+  background-color: @primary;
+  .icon {
+    color: @background;
+  }
+
+  .counter {
+    color: @primary;
+    background-color: @background;
+  }
+
+  &:hover {
+    background-color: @primary;
+  }
+}
+
+.regs {
+  background-color: @background;
+  height: 0;
+  overflow: hidden;
+
+  span {
+    position: relative;
+    top: 3px;
+    left: 60px;
+    width: calc(100% - 60px);
+  }
+}
+
+.regs.regs-active {
+  height: fit-content;
+  &:hover {
+    background-color: @hover;
+  }
+}
+
+.reg {
+  .col();
+}

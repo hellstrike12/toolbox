@@ -1,0 +1,126 @@
+#cols {
+  width: 250px;
+  max-width: 500px;
+  height: 100vh;
+  background-color: inherit;
+  color: #ffffff;
+  box-shadow: 1px 0px 5px black;
+}
+#cols-header {
+  color: #ffffff;
+  background-color: #121212;
+  font-weight: bold;
+  font-size: small;
+  text-align: center;
+  padding: 0.5rem;
+}
+#cols-content {
+  padding-top: 0.25rem;
+}
+.col {
+  width: inherit;
+  height: 25px;
+  font-size: 12pt;
+  background-color: #121212;
+  overflow: hidden;
+}
+.col .icon {
+  color: #8207c5;
+  font-size: inherit;
+  position: relative;
+  top: 4px;
+  left: 10px;
+}
+.col .label {
+  color: #ffffff;
+  font-size: inherit;
+  position: relative;
+  top: 3px;
+  left: 20px;
+}
+.col .counter {
+  font-weight: bold;
+  color: #121212;
+  background-color: #8207c5;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  top: 3px;
+  margin-right: 10px;
+  width: 40px;
+  float: right;
+}
+.col:hover {
+  background-color: #181818;
+}
+.col.selected {
+  background-color: #8207c5;
+}
+.col.selected .icon {
+  color: #121212;
+}
+.col.selected .counter {
+  color: #8207c5;
+  background-color: #121212;
+}
+.col.selected:hover {
+  background-color: #8207c5;
+}
+.regs {
+  background-color: #121212;
+  height: 0;
+  overflow: hidden;
+}
+.regs span {
+  position: relative;
+  top: 3px;
+  left: 60px;
+  width: calc(100% - 60px);
+}
+.regs.regs-active {
+  height: fit-content;
+}
+.regs.regs-active:hover {
+  background-color: #181818;
+}
+.reg {
+  width: inherit;
+  height: 25px;
+  font-size: 12pt;
+  background-color: #121212;
+  overflow: hidden;
+}
+.reg .icon {
+  color: #8207c5;
+  font-size: inherit;
+  position: relative;
+  top: 4px;
+  left: 10px;
+}
+.reg .label {
+  color: #ffffff;
+  font-size: inherit;
+  position: relative;
+  top: 3px;
+  left: 20px;
+}
+.reg .counter {
+  font-weight: bold;
+  color: #121212;
+  background-color: #8207c5;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  top: 3px;
+  margin-right: 10px;
+  width: 40px;
+  float: right;
+}
+.reg:hover {
+  background-color: #181818;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  margin: 0px;
+  background-color: #121212;
+}
